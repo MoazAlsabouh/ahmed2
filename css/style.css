@@ -1,0 +1,162 @@
+/* Rest the defult proparty in CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, "Roboto";
+}
+
+body {
+  /* to use Rem */
+  font-size: 62.5%;
+}
+
+/*  */
+.contenar {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .contenar {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .contenar {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .contenar {
+    width: 1170px;
+  }
+}
+/*  */
+
+/* heder section */
+header {
+  background-color: #f1f3f5;
+}
+
+header .contenar {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  height: 5rem;
+}
+
+header .logo-img {
+  margin-left: 3rem;
+}
+
+header .nav {
+  width: calc(100% - 125px);
+}
+
+header .main-nav {
+  font-size: 2rem;
+  text-align: center;
+}
+
+header .main-nav .main-nav-list {
+  font-size: 1.2rem;
+  display: flex;
+
+}
+
+header .main-nav .main-nav-list .ullist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* margin-left: 4rem; */
+  padding: 1.2rem;
+  gap: 3rem;
+}
+
+header .main-nav .main-nav-list .right {
+  display: flex;
+  /* width: 32%; */
+  height: 60px;
+  flex-basis: 46%;
+}
+
+header .main-nav .main-nav-list .right li {
+  margin-left: auto;
+  list-style: none;
+  background-color: #fa5252;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 40px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+header .main-nav .main-nav-list .main-nav-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+header .main-nav .main-nav-list .main-nav-link:last-child {
+  
+}
+/*  */
+
+
+
+
+
+.section-hero {
+  font-family: sans-serif;
+  background-color: #f1f3f5;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-hero-text {
+  margin-top: 9rem;
+  width: 48%;
+}
+
+.hero {
+  font-size: 1rem;
+  font-weight: bold;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  /* display: grid; */
+  /* align-items: center;
+  text-align: center; */
+
+  /* grid-template-columns: 1fr 1fr; */
+  padding: 2rem;
+}
+
+.section-img {
+  margin-top: 5rem;
+  width: 47%;
+}
+
+.section-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  stroke: #333;
+}
